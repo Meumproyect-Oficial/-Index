@@ -1,222 +1,93 @@
 <!DOCTYPE html>
-<!-- Plataforma oficial de Consultoría, Asesoría, Planificación y Desarrollo Empresarial para PYMES y particulares.
-
-👩👨 Autoría y Dirección:
-CEO Ing. Germán Ruz Pérez Co-Fundador 💫
-
-COO ING.Magdalena Monguee Vega Co-Fundadora ✨
-
-Website created and developed by Three Cats Company 🐾🐾🐾
-
-Este proyecto se encuentra bajo la licencia Apache 2.0. Consulta el archivo LICENSE para más detalles -->
-
-<!-- 1 - Head e Importaciones -->
 <html lang="es">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>MeumProyect - Tu Idea, Tu Proyecto</title>
-
- <link rel="icon" href="Icons/Favicon.png" type="image/png"> 
+ <title>MeumProyect - Germán Ruz</title>
+ <link rel="manifest" href="manifest.json">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
  <link rel="stylesheet" href="Styles/index.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
- <div class="MainWrapper"> 
 
-<!-- 2 - Header y Cabecera Principal -->
- <header class="Header FadeIn DelayTwo">
- <div class="IdCardContainer">
- <div class="IdCardWrapper">
- <div class="CurrentDate" id="Current-Date"></div>
- <a href="#" class="LogoLink" title="Recargar página" onclick="location.reload(); return false;">
- <img src="Images/IDcard.png" alt="MeumProyect" class="IdCardHeader">
- </a>
- </div>
- </div>
-
- <div class="MainNavigation">
- <div class="UpdateDate" id="Update-Date"></div>
+ <div class="TarjetaContenedor">
  
-<!-- 3 - Menú de Redes Sociales -->
- <div class="SocialNavigation">
- <i class="fa-brands fa-facebook SocialIcon"></i>
- <i class="fa-brands fa-facebook-messenger SocialIcon"></i>
- <i class="fa-brands fa-youtube SocialIcon"></i>
- </div> 
-
-<!-- 4 - Menú Principal de Navegación -->
- <ul class="NavigationLinks">
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Conózcanos"><a href="#Panel-Nosotros" class="ItemLink EnlacePanel">Nosotros</a></div></li>
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Soluciones"><a href="#Panel-Servicios" class="ItemLink EnlacePanel">Servicios</a></div></li>
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Únase a nosotros"><a href="#Panel-Registro" class="ItemLink EnlacePanel">Registro</a></div></li>
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Ingrese a su cuenta"><a href="#Panel-Acceso" class="ItemLink EnlacePanel">Acceso</a></div></li>
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Soporte y ayuda"><a href="#Panel-Asistencia" class="ItemLink EnlacePanel">Asistencia</a></div></li>
- <li><div class="CustomTooltipWrapper ItemTooltipContainer" data-tooltip="Hablemos"><a href="#Panel-Contacto" class="ItemLink EnlacePanel">Contacto</a></div></li>
- <li><a href="#" class="ItemLink WhatsappIcon"><i class="fa-brands fa-whatsapp"></i></a></li>
- </ul>
- </div>
+ <header class="IdentidadSeccion">
+ <h1 class="Logotipo">MeumProyect<sup class="MarcaRegistrada">&reg;</sup></h1>
+ <h2 class="Nombre">Ing. Germán Ruz</h2>
+ <div class="Cargo">CEO</div>
+ <p class="Eslogan">Tu Idea - Tu Proyecto</p>
  </header>
 
- <!-- 5 - Contenido Central -->
- <main class="MainContent FadeIn DelayOne">
- <div class="WelcomeBox">
- <h1 class="WelcomeText">Bienvenido</h1>
- <h2 class="EnjoyText">Disfrute su visita</h2>
- <div class="InteractiveGuideContainer">
- <div class="CustomTooltipWrapper" data-tooltip="Guía Paso a paso para Obtener su servicio">
- <a href="#Panel-Guia" class="MetallicButton EnlacePanel">Guía Interactiva</a>
+ <main class="AccionesSeccion">
+ 
+ <a href="Images/Tarjeta de Presentacion.png" download="MeumProyect-Tarjeta.png" class="BtnPrincipal" id="Btn-Descargar-Imagen">
+ <i class="fa-solid fa-image BtnIcono"></i>
+ <div class="BtnTextoContenedor">
+ <span class="BtnTextoAlto">Descargar Imagen</span>
+ <span class="BtnTextoBajo">Guarda la tarjeta en tu galería</span>
+ </div>
+ </a>
+
+ <a href="#" class="BtnPrincipal" id="Btn-Guardar-Tarjetero">
+ <i class="fa-solid fa-address-card BtnIcono"></i>
+ <div class="BtnTextoContenedor">
+ <span class="BtnTextoAlto">Guardar en Tarjetero</span>
+ <span class="BtnTextoBajo">Próximamente disponible</span>
+ </div>
+ </a>
+
+ <a href="#" class="BtnPrincipal" id="Btn-Instalar-Pantalla">
+ <i class="fa-solid fa-mobile-screen-button BtnIcono"></i>
+ <div class="BtnTextoContenedor">
+ <span class="BtnTextoAlto">Agregar a la Pantalla</span>
+ <span class="BtnTextoBajo">Instala el acceso directo</span>
+ </div>
+ </a>
+
+ <a href="tel:+529994252104" class="BtnPrincipal">
+ <i class="fa-solid fa-phone BtnIcono"></i>
+ <div class="BtnTextoContenedor">
+ <span class="BtnTextoUnico">Hacer una Llamada</span>
+ </div>
+ </a>
+ 
+ <div class="RedesCuadricula">
+ <a href="sms:+529994252104" class="BtnRed">
+ <i class="fa-solid fa-comment-sms"></i>
+ <span>Mensaje</span>
+ </a>
+ <a href="mailto:meumproyect@gmail.com?subject=Contacto%20MeumProyect" class="BtnRed">
+ <i class="fa-solid fa-envelope"></i>
+ <span>Correo</span>
+ </a>
+ <a href="https://wa.me/529994252104" target="_blank" class="BtnRed">
+ <i class="fa-brands fa-whatsapp"></i>
+ <span>WhatsApp</span>
+ </a>
+ <a href="https://meumproyect-oficial.github.io/-Index/" target="_blank" class="BtnRed">
+ <i class="fa-solid fa-globe"></i>
+ <span>Sitio Web</span>
+ </a>
+ </div>
+
+ <a href="https://maps.google.com/?q=IYEM+Instituto+Yucateco+de+Emprendedores+Merida" target="_blank" class="BtnPrincipal" style="text-decoration: none; padding: 16px 20px; margin-bottom: 0;">
+ <div class="ServiciosContenedor" style="display: block; width: 100%; text-align: center; position: relative;">
+ <i class="fa-solid fa-location-dot ServiciosIcono" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 24px; color: #ffffff; width: 40px; text-align: left;"></i>
+ <div class="ServiciosTexto" style="display: block; width: 100%; padding-left: 20px; padding-right: 20px;">
+ <h3 style="font-family: 'Tahoma', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 4px;">Oficinas Generales</h3>
+ <p style="font-family: 'Tahoma', sans-serif; font-size: 11px; color: #a0aec0; line-height: 1.4;">
+ IYEM - Av. Principal, Ind. No Contaminantes 13613<br>
+ Mérida, Yuc. • Lun a Vie: 9:00 a.m.
+ </p>
  </div>
  </div>
- </div>
+ </a>
+
  </main>
 
- <!-- 6 - Footer Principal -->
- <footer class="MainFooter FadeIn DelayThree">
- <!-- 7 - Menú del Footer -->
- <nav class="FooterNav">
- <div class="CustomTooltipWrapper FooterTooltipContainer" data-tooltip="Filosofía Organizacional"><a href="#Panel-Identidad" class="FooterItemLink EnlacePanel">Identidad</a></div>
- <div class="CustomTooltipWrapper FooterTooltipContainer" data-tooltip="Privacidad y Datos seguros"><a href="#Panel-Privacidad" class="FooterItemLink EnlacePanel">Privacidad</a></div>
- <div class="CustomTooltipWrapper FooterTooltipContainer" data-tooltip="Honestidad y Transparencia"><a href="#Panel-Transparencia" class="FooterItemLink EnlacePanel">Transparencia</a></div>
- <div class="CustomTooltipWrapper FooterTooltipContainer" data-tooltip="Términos y condiciones"><a href="#Panel-Legal" class="FooterItemLink EnlacePanel">Legal</a></div>
- <div class="CustomTooltipWrapper FooterTooltipContainer" data-tooltip="Guía de Contenido WEB"><a href="#Panel-Orientacion" class="FooterItemLink EnlacePanel">Orientación</a></div>
- </nav>
-
- <!-- 8 - Colofón Copyright -->
- <p class="CopyrightText">&copy; 2026 MeumProyect - Todos los derechos reservados.</p>
- </footer>
  </div>
 
- <!-- 9 - Paneles Deslizantes Flotantes del Menú Principal -->
- <div id="Panel-Nosotros" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Nosotros</h2>
- <p class="PanelDescription">Somos una firma de consultoría y desarrollo enfocada en potenciar ideas y convertirlas en proyectos estructurados de alto impacto empresarial.</p>
- </div>
- </div>
-
- <div id="Panel-Servicios" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Servicios</h2>
- <ul class="PanelSubmenuList">
- <li><a href="#">* Consultoría Estratégica: El acompañamiento integral para la planificación y el rumbo del negocio.</a></li>
- <li><a href="#">* Desarrollo y Diseño Web: La arquitectura digital y visual de plataformas corporativas.</a></li>
- <li><a href="#">* Optimización de Procesos: La mejora continua y estructuración operativa para PYMES.</a></li>
- <li><a href="#">* Asesoría Tecnológica: La integración de herramientas informáticas adaptadas a cada necesidad empresarial.</a></li>
- <li><a href="#">* Diseño de Espacios e Infraestructura: La planeación, arquitectura y distribución física de oficinas, bodegas y espacios de trabajo.</a></li>
- </ul>
- </div>
- </div>
-
- <div id="Panel-Registro" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Registro</h2>
- <p class="PanelDescription">Únase a nuestra plataforma para acceder a soluciones personalizadas y dar inicio a su proyecto empresarial.</p>
- </div>
- </div>
-
- <div id="Panel-Acceso" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Acceso</h2>
- <p class="PanelDescription">Ingrese a su portal privado para gestionar sus consultas, dar seguimiento a proyectos y consultar documentación técnica.</p>
- </div>
- </div>
-
- <div id="Panel-Asistencia" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Asistencia</h2>
- <p class="PanelDescription">Soporte continuo y guía paso a paso para la resolución de dudas técnicas y acompañamiento operativo.</p>
- </div>
- </div>
-
- <div id="Panel-Contacto" class="SlidingPanel LeftToRightPanel">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Contacto</h2>
- <p class="PanelDescription">Escríbanos directamente o coordine una cita con nuestros asesores para atender sus requerimientos específicos.</p>
- </div>
- </div>
-
- <!-- 10 - Panel a Pantalla Completa (Guía Interactiva) -->
- <div id="Panel-Guia" class="SlidingPanelFullScreen">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Guía Interactiva</h2>
- <p class="PanelDescription">Bienvenido a la guía interactiva. Aquí encontrará la orientación integral paso a paso para seleccionar, estructurar y contratar los servicios idóneos para su proyecto.</p>
- </div>
- </div>
-
- <!-- 11 - Paneles Centradores Flotantes del Footer -->
- <div id="Panel-Identidad" class="SlidingPanelFooter">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Identidad</h2>
- <p class="PanelDescription">Filosofía organizacional, valores y el compromiso absoluto de nuestra casa con la excelencia y la cercanía humana.</p>
- </div>
- </div>
-
- <div id="Panel-Privacidad" class="SlidingPanelFooter">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Privacidad</h2>
- <p class="PanelDescription">Políticas de protección y confidencialidad absoluta sobre los datos de nuestros clientes y sus proyectos.</p>
- </div>
- </div>
-
- <div id="Panel-Transparencia" class="SlidingPanelFooter">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Transparencia</h2>
- <p class="PanelDescription">Honestidad operativa, claridad en procesos y cumplimiento estricto de los acuerdos establecidos.</p>
- </div>
- </div>
-
- <div id="Panel-Legal" class="SlidingPanelFooter">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Legal</h2>
- <p class="PanelDescription">Términos, condiciones y marco regulatorio que respalda el uso de nuestros servicios y desarrollos.</p>
- </div>
- </div>
-
- <div id="Panel-Orientacion" class="SlidingPanelFooter">
- <div class="CustomTooltipWrapper PanelCloseWrapper" data-tooltip="Cerrar">
- <a href="#" class="PanelCloseButton" data-close-panel>X</a>
- </div>
- <div class="PanelContentInner">
- <h2 class="PanelTitle">Orientación</h2>
- <p class="PanelDescription">Guía del sitio web, mapa de navegación y orientación integral para maximizar el uso de nuestra plataforma.</p>
- </div>
- </div>
-
- <!-- 12 - Scripts y Controladores JS --> 
  <script src="Java/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+/*
+ * Normalize-MM v1.0.16.04.26
+ * Un proyecto creado con amor y lógica por:
+ * Magdalena Monguee✨
+ * Germán Ruz💫
+ * Jade Ruz Monguee🐰
+ * 
+ * Porque nuestra casa se construye desde los cimientos. 🐾🐾
+ */
+
+/* Box sizing rules - Modern Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin - Combined Logic */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Core defaults - Modern Base */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Lists - Modern Base */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Headings and specific elements - Technical Precision from Classic */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Image handling - Modern Base */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  border-style: none;
+}
+
+/* Forms - Technical Precision from Classic */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Interactive & Misc - Technical Precision from Classic */
+details,
+main {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Accessibility - Modern Base */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
